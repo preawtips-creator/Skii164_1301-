@@ -6,12 +6,12 @@ public class Flag : MonoBehaviour
     {
         Player player = other.gameObject.GetComponent<Player>();
 
-        if (player != null)
+        if (player == null)
             return;
       
         player.Point += 10;
 
         UIManager.Instance.ShowNotiText($"+10 Point\nPoint: {player.Point}");
-        Destroy( gameObject);
+        Destroy(gameObject);
     }
 }

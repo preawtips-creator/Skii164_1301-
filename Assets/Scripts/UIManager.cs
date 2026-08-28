@@ -36,10 +36,10 @@ public class UIManager : MonoBehaviour
     }
     public void RestartGame()
     {
-        player.transform.position = new Vector3(0f, 88.5f, -86f);
+        player.transform.position = new Vector3(0f, 88.96f, -86.9f);
         player.Hp = 100;
 
-        ShowNotiText("Restart");
+        ShowNotiText("Relife");
         Time.timeScale = 1f;
         ShowHideRestartButton(false);
     }
